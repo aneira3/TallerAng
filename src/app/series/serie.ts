@@ -1,19 +1,19 @@
 export class Serie {
-    position: number;
-    title: string;
-    platform:string;
-    nr_seasons: number;
+    id: number;
+    name: string;
+    channel:string;
+    seasons: number;
     description: string;
-    direction: string;
-    image: string;
+    webpage: string;
+    poster: string;
 
-    public constructor(position: number, title: string, platform: string, nr_seasons:number, description:string, direction:string, image:string){
-        this.position = position;
-        this.title = title;
-        this.platform = platform;
+    public constructor(id: number, name: string, channel: string, seasons:number, description:string, webpage:string, poster:string){
+        this.id = id;
+        this.name = name;
+        this.channel = channel;
         this.description = description;
-        this.nr_seasons = nr_seasons;
-        this.direction = direction;
-        this.image = image;
+        this.seasons = seasons;
+        this.webpage = webpage;
+        this.poster = poster;
     }
 }

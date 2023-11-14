@@ -20,4 +20,15 @@ export class SeriesComponent implements OnInit {
     this.getSeries();
   }
 
+  getPromedio()
+  {
+    let total = 0;
+    let resultado = 0;
+    for (const serie of this.series) {
+      total += serie.seasons;
+    }
+    resultado = total/this.series.length;
+    return resultado;
+  }
+
 }

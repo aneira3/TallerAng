@@ -12,19 +12,20 @@
       <tbody>
         <tr *ngFor="let c of series">
           <td>
-            <dd>{{c.position}}</dd> 
+            <dd>{{c.id}}</dd> 
           </td>
           <td>
-            <dd>{{c.title}}</dd> 
+            <dd>{{c.name}}</dd> 
           </td>
           <td>
-            <dd>{{c.platform}}</dd> 
+            <dd>{{c.channel}}</dd> 
           </td>
           <td>
-            <dd>{{c.nr_seasons}}</dd> 
+            <dd>{{c.seasons}}</dd> 
           </td>
       </tr>
       </tbody>
     </table>
   </div>
+  <span>Seasons Average: {{getPromedio()}}</span>
 </div>
