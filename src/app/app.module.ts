@@ -1,10 +1,11 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CourseModule } from './course/course.module';
+import { SeriesModule } from './series/series.module';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { CourseModule } from './course/course.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CourseModule,
+    SeriesModule,
     HttpClientModule
   ],
   providers: [],
